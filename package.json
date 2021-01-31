@@ -1,0 +1,19 @@
+{
+  "name": "ndse",
+  "version": "1.0.0",
+  "description": "repository with completed tasks for lecture ndse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/VShirokov/my-ndse.git"
+  },
+  "author": "Vladimir Shirokov",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "eslint-plugin-node": "^11.1.0"
+  }
+}
