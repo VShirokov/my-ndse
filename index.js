@@ -68,18 +68,16 @@ const maybePlayAgain = () => {
     });
 }
 
-yargs(hideBin(process.argv)).command(
-    'start',
-    `Start the game
-    use optionaly with option "f" and enter log-file name
-    by default - "log"
-    Example: \n\tcmd start\n\tcmd start -f log-shmog`,
-    yargs => yargs.option('f', {
-        default: 'log'
-    }),
-    argv => {
-        console.info(argv)
-        game();
+yargs(hideBin(process.argv))
+    .usage('Usage: $0 start\nUse optionaly with option "f" and enter log-file name. By default - "log"\nExample:\ncmd start\ncmd start -f log-shmog')
+    .command(
+        'start',
+        'Start the game',
+        yargs => yargs.option('f', {
+            default: 'log'
+        }),
+        () => {
+            game();
     })
     .demandCommand(1)
     .argv;
