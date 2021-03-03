@@ -10,10 +10,17 @@
     "type": "git",
     "url": "https://github.com/VShirokov/my-ndse.git"
   },
+  "bin": {
+    "cmd": "./index.js"
+  },
   "author": "Vladimir Shirokov",
   "license": "ISC",
   "devDependencies": {
+    "dotenv": "^8.2.0",
     "eslint": "^7.18.0",
     "eslint-plugin-node": "^11.1.0"
+  },
+  "dependencies": {
+    "yargs": "^16.2.0"
   }
 }
